@@ -1,0 +1,104 @@
+.monitoring {
+    &__list_camera {
+        width: 245px;
+        margin: -30px 0 0 15px;
+        background-color: rgb(48, 51, 56);
+        padding: 0 15px;
+        height: calc(100vh - 60px);
+        overflow: hidden;
+
+        @media (max-width: 767px) {
+            height: 100%;
+            margin: 20px 0 0 0;
+            width: 100%;
+        }
+
+        .skip_list {
+            color: #fff;
+            font-size: 8.5px;
+            background-color: #212227;
+            border: 1px solid #303338;
+            text-align: right;
+            padding: 2px 0;
+            margin: 0 -15px;
+
+            &:hover {
+                color: #f4a239;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__search {
+        background: #23262d;
+        margin: 15px 0;
+
+        .icon {
+            margin-left: 10px;
+        }
+    }
+
+    &__list_item {
+        @include scrollbar;
+        padding: 0 5px 50px 0;
+        max-height: 760px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: calc(100% + 10px);
+
+        @media (max-width: 767px) {
+            width: 100%;
+            @include flexbox;
+            @include flex-wrap(wrap);
+            @include justify-content(space-between);
+            padding-bottom: 30px;
+        }
+
+    }
+
+    &__count_people {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    &__item {
+        border: solid 1px #8b8b8b;
+        position: relative;
+        margin-bottom: 15px;
+
+        @media (max-width: 767px) {
+            width: 48%;
+        }
+
+        @media (max-width: 480px) {
+            width: 100%;
+            @include flex-direction(column)
+        }
+
+        .icon {
+            position: absolute;
+            background-color: #fff;
+            font-size: 15px;
+            padding: 5px 6px;
+            top: 5%;
+            left: 5%;
+            border-radius: 50%;
+
+        }
+
+        .img {
+            @include flex_center;
+            max-height: 135px;
+            overflow: hidden;
+
+        }
+
+        .img-camera {
+            width: 100%;
+        }
+
+        .text_name {
+            color: #f4a239;
+        }
+    }
+}

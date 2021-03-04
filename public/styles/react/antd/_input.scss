@@ -1,0 +1,25 @@
+.ant-picker {
+    .anticon-calendar {
+
+        &::after {
+            position: absolute;
+            content: "\f073";
+            font-size: 16px;
+            color: #f4a239;
+            font-family: "Font Awesome 5 Free";
+            top: 50%;
+            @include transform(translateY(-50%));
+
+        }
+
+        svg {
+            display: none;
+        }
+    }
+
+    .ant-picker-suffix {
+        color: #fff;
+        width: 18px;
+        margin-left: 0;
+    }
+}

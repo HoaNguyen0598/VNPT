@@ -1,0 +1,44 @@
+.rc_chartLineArea{
+    max-width: 350px;
+    .m_heading{
+        margin-left: 25px;
+        .title
+        {
+            font-size: 16px;
+            i{
+                font-size: 17px;
+            }
+        } 
+        .m_select_time {
+            .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+                background-color: #1f2128;
+                border: none;
+            }
+            .ant-select{
+                color: #7bce92;
+            }
+            .ant-select-arrow{
+                color: #ffffff;
+            }
+        }
+    }
+    .total{
+        margin-left: 45px;
+        .decreage{
+            color: #e65454;
+            font-size: 20px;
+            font-weight: 500;
+            .percent{
+                font-size: 12px;
+            }
+        }
+        .increage{
+            color: #7bce92;
+            font-size: 20px;
+            font-weight: 500;
+            .percent{
+                font-size: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.detect_content{
+    @include flexbox;
+    @include transition(all 0.3s ease);
+    width: 100%;
+    position: relative;
+    @media (max-width: 767px) {
+        @include flex-direction(column);
+    }
+
+    &__left{
+        flex: 1;
+    }
+    &__sidebar_open {
+        color: #fff;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        cursor: pointer;
+        display: none;
+        background: #30333c;
+        padding: 5px 10px 5px 10px;
+        z-index: 1;
+        font-size: 12px;
+        @media (max-width: 767px) {
+            display: none !important;
+        }
+        &.active {
+            display: block;
+        }
+    }
+    &.active {
+        width: calc(100% + 245px);
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
+        .detect_content__left_wrap {
+            max-height: calc(100vh - 170px);
+            overflow: hidden;
+        }
+    }
+}

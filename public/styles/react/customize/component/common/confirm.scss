@@ -1,0 +1,34 @@
+.Confirm{
+    display: flex;
+    background: white;
+    align-items: center;
+    border-radius: 5px;
+    &_check{
+        border-radius: 2px;
+        background-color: #fff;
+        border: 2px solid #c1c1c1;
+        font-size: 1px;
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    &_title{
+        margin: 0;
+        max-width: 170px;
+    }
+    &_right{
+        text-align: center;
+        padding-top: 15px;
+        & img{
+            width: 32px;
+        }
+        & p{
+            font-size: 10px;
+        }
+        &-cap{
+            font-size: 10px;
+        }
+    }
+}

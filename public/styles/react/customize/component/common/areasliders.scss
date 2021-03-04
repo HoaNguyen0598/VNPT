@@ -1,0 +1,22 @@
+.rc_areasliders {
+    &_item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .slick-list {
+        margin: 0 -5px;
+        .slick-track {
+            .slick-slide {
+                transition: transform 0.2s ease-in-out;
+                transform: scale(0.92);
+                &.slick-active.slick-current {
+                    transform: scale(1.04);
+                }
+                & > div {
+                    font-size: 0;
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+}

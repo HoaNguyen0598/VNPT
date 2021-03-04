@@ -1,0 +1,55 @@
+.rc_checkbox {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.13;
+    .ant-checkbox {
+        border-color: #adb5bd;
+        &-wrapper {
+            &:hover{
+                .ant-checkbox-inner {
+                    border-color: #adb5bd;
+                }
+            }
+        }
+        &-inner {
+            border-radius: 0;
+            border-color: #d5d5d5;
+            width: 22px;
+            height: 22px;
+            &:after {
+                width: 6.714286px;
+                height: 10.142857px;
+                left: 24%;
+                animation: none;
+                transition: background-color .15s ease-in-out,
+                border-color .15s ease-in-out,
+                box-shadow .15s ease-in-out;
+            }
+        }
+        &-checked {
+            &:after {
+                animation: none;
+                border-color: transparent;
+            }
+            .ant-checkbox-inner {
+                border-color: #7bce92;
+                background-color: #7bce92;
+            }
+        }
+    }
+    &-outline {
+        .ant-checkbox {
+            &-checked {
+                .ant-checkbox-inner {
+                    background-color: transparent;
+                    &:after {
+                        border-color: #7bce92;
+                    }
+                }
+            }
+        }
+    }
+    .ant-checkbox-disabled + span{
+        color: #000000;
+    }
+}

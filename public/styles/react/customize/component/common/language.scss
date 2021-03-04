@@ -1,0 +1,44 @@
+
+.rc_language {
+    $root: &;
+    display: flex;
+    position: relative;
+    &_selected {
+        display: flex;
+        cursor: pointer;
+        &_icon {
+            width: 30px;
+            margin-right: 6px;
+        }
+    }
+    &_dropdown {
+        padding: 0;
+        padding: 6px 10px;
+        &_item {
+            display: flex;
+            padding: 5px 0;
+            cursor: pointer;
+            &_image {
+                flex: 0 0 30px;
+                min-width: 30px;
+                img {
+                    max-width: 100%;
+                }
+            }
+            &_label {
+                padding-left: 6px;
+                flex: auto;
+            }
+        }
+    }
+    &-minimize {
+        #{$root}_dropdown {
+            &.dropdown-menu {
+                min-width: auto;
+            }
+        }
+        .rc_language_dropdown_item_label {
+            display: none;
+        }
+    }
+}

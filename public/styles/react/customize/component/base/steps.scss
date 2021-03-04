@@ -1,0 +1,21 @@
+.rc_steps{
+    .ant-steps-item-title {
+        color: white !important;
+    }
+    .ant-steps-item-process .ant-steps-item-icon {
+        background-color: green;
+        border-color: green;
+    }
+    .ant-steps-item-finish .ant-steps-item-icon {
+        background-color: green;
+        border-color: green;
+    }
+    .ant-steps-item-finish .ant-steps-item-icon {
+        .ant-steps-icon {
+            top: -3px;
+        }
+        svg {
+            fill: white;
+        }
+    }
+}

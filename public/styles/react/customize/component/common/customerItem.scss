@@ -1,0 +1,33 @@
+.rc_customer{
+    color: white;
+    display: flex;
+    width: 450px;
+    height: 70px;
+    //background-color: #7bce92;
+    padding: 10px 16px;
+    //opacity: 0.3;
+    &--img{
+        width: 50px;
+        height: 50px;
+        border-radius: 2px;
+        background-color: white;
+        margin-right: 10px;
+    }
+    &__info{
+
+        &--name{
+            font-family: HelveticaNeue;
+            font-size: 17px;
+            color: #ffffff;
+        }
+        &--phone{
+            font-family: HelveticaNeue;
+            font-size: 14px;
+            color: white;
+        }
+    }
+}
+.rc_customer:hover{
+    background-color: #7bce92;
+    opacity: 0.3;
+}

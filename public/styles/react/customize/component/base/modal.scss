@@ -1,0 +1,34 @@
+.rc_modal {
+    .ant-modal-content {
+        .ant-modal-close-x {
+            height: 47px;
+            width: 62px;
+            line-height: 52px;
+        }
+    }
+    &_closeicon {
+        i {
+            font-size: 18px;
+            color: #ff3f3f;
+        }
+    }
+    .modal-content {
+        background-color: #ffffff;
+        .modal-header {
+            border-bottom: solid 1px rgba(0, 128, 255, 0.25);
+            border-radius: 0;
+            padding: 11px 24px;
+            .modal-title {
+                color: #304460;
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+        }
+        .modal-body {
+            color: #666b77;
+            padding: 19px 35px 30px 35px;
+        }
+    }
+}

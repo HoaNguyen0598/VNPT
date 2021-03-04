@@ -1,0 +1,20 @@
+.main_wapper {
+    .main_content {
+        //background-color: unset;
+    }
+    .header {
+        //background-color: unset;
+    }
+    .footer {
+        //background-color: unset;
+    }
+    //background-image: url('../images/main.png');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .ant-steps {
+        margin-bottom: 50px;
+    }
+}

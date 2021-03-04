@@ -1,0 +1,38 @@
+.rc_notifyitem {
+    display: flex;
+    &_icon {
+        border-radius: 3px;
+        border: 1px solid #7bce92;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 49px;
+        padding: 8px;
+    }
+    &_content {
+        padding-left: 10px;
+    }
+    &_title {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.21;
+        color: #e65454;
+        margin-bottom: 2px;
+    }
+    &_time {
+        font-size: 12px;
+        line-height: 1.17;
+        color: #9eabbe;
+        margin-bottom: 3px;
+    }
+    &_description {
+        font-size: 12px;
+        line-height: 1.17;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

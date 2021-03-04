@@ -1,0 +1,32 @@
+.alert{
+    border-radius: 0;
+    padding: 10px 22px;
+
+    i{
+        padding-right: 7px;
+    }
+    
+    &-danger{
+        border: solid 1px #e94c4c;
+        background-color: rgba(233, 76, 76, 0.1);
+        color: #e94c4c;
+    }
+
+    &-primary{}
+    &-secondary{}
+    &-success{}
+    
+    &-warning{}
+    &-info{}
+    &-light{}
+    &-dark{}
+}
+.card-nodata-alert{
+    @include flex_center;
+    background-color: #fff;
+    width: 100%;
+    
+    img{
+        padding: 10% 20%;
+    }
+}

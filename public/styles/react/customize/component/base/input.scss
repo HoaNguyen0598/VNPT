@@ -1,0 +1,46 @@
+.rc_input {
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: #000;
+    height: 56px;
+    input{
+        background-color: #ffffff;
+        color: #000000;
+    }
+    &:hover{
+    border: 1px solid #393c42;
+    }
+    &.rc_input_password{
+        height: 56px;
+        font-size: 20px;
+        font-weight: 300;
+        svg{
+            color: #ffffff;
+            opacity: 0.71;
+        }
+    }
+}
+.m_search{
+    .ant-input-affix-wrapper{
+        background-color: #212227;
+        border: 1px solid #393c42;
+        color: white;
+        height: 38px;
+    }
+     input{
+      background-color: #212227;
+        color: #ffffff;
+    }
+}
+.rc_inputNormal{
+    height: 44px;
+    border-radius: 2px;
+    background-color: #1f2128;
+    border: 1px solid #393c42;
+    color: #ffffff;
+    input{
+        padding: 12px 426px 12px 15px;
+        color: #ffffff;
+    }
+}

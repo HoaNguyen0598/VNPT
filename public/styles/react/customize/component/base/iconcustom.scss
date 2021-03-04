@@ -1,0 +1,14 @@
+.rc_icon {
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    &-small {
+        width: 24px;
+        height: 24px;
+    }
+    &-wifi {
+        background-image: url(/images/icons/icon-wifi.png);
+    }
+}

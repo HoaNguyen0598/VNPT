@@ -1,0 +1,18 @@
+.map_camera {
+    .camera_live__live_screen {
+        position: relative;
+    }
+
+    .camera_live__top {
+        @media (max-width: 480px) {
+            display: flex;
+        }
+
+    }
+    &__icon_place {
+        position: absolute;
+        
+        width: 2vw;
+        height: 30px;
+    }
+}

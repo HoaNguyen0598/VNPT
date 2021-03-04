@@ -1,0 +1,50 @@
+.datepicker table tr td, .datepicker table tr th {
+    width: 40px;
+    text-align: center;
+}
+
+.date-picker {
+    position: relative;
+    background-color: #fff;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: none;
+
+    width: 100%;
+
+    @media (max-width: 475px) {
+        flex-grow: 1;
+    }
+
+    &::before {
+        font-size: 16px;
+        right: 14px;
+        position: absolute;
+        content: "\f073";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 400;
+        color: #0d0d0d;
+        top: 50%;
+        color: #f4a239;
+        z-index: 0;
+        @include transform(translateY(-50%));
+        @media(max-width: 991px) {
+            font-size: 12px;
+        }
+    }
+
+    input {
+        position: relative;
+        z-index: 1;
+        background-color: transparent !important;
+    }
+}
+.datepicker-dropdown {
+
+    border-radius: 0;
+
+    @media (max-width: 375px) {
+        left: 0 !important;
+    }
+}

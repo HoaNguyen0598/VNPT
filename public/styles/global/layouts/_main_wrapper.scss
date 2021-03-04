@@ -1,0 +1,64 @@
+
+body{
+    font-size: 16px;
+    font-family: $RobotoRegular;
+    padding: 0;
+    margin: 0;
+}
+
+.main_wapper {
+    @include flexbox;
+    &.mini-sidebar {
+        &.active{
+            .sidebar {
+                @include transform(translateX(0));
+            }
+            .sidebar_toggler{
+                @include transform(translateX(245px));
+            }
+        }
+        .sidebar{
+            position: absolute;
+            @include transform(translateX(-245px));
+            .nav {
+                .nav-link {
+                    .icon {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .sidebar_toggler{
+            @include transition(all 0.4s ease);
+        }
+    }
+}
+
+.main_content {
+    @include scrollbar;
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 60px);
+    max-height: calc(100vh - 60px);
+    padding: 30px 35px 0 35px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    @media(max-width: 767px){
+        margin-top: 60px;
+        padding:40px 20px 30px 20px;
+    }
+    &.hasSidebar{
+        padding-right: 0 !important;
+        @media(max-width: 767px){
+            padding-right: 25px !important;
+        }
+    }
+    &.auto_list{
+        padding: 0 !important;  
+    }
+}
+
+.main_container{
+    @include flex(1);
+    overflow: hidden;
+}
