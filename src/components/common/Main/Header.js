@@ -1,47 +1,58 @@
-import React from 'react';
-import ChangeLanguage from './ChangeLanguage';
-import useClickOutside from 'hooks/useClickOutside';
+import React, { useState } from 'react';
 
-const Header = () => {
-    const { ref, isVisible, setIsVisible } = useClickOutside(false);
+function Header() {
+    const [dropdown, setDropdown] = useState(false);
     return (
-        <header className="header rc_header d-flex align-items-center">
-            <div className="logo">
-                <img className="w-100" src="https://via.placeholder.com/42" />
+        <div className="Header">
+            <div className="Header_logo">
+                <a href="">
+                    <img className="Header_logo-img" src="https://ekyc.vnpt.vn/admin-dashboard/assets/img/logo_ekyc.svg" />
+                </a>
             </div>
-            <div className="user">
-                <div style={{ marginRight: 10 }}>
-                    <ChangeLanguage />
+            <div className="Header_right">
+                <div className="Header_right-bar">
+                    <a href="">
+                        <i className="fas fa-bars"></i>
+                    </a>
                 </div>
-                <div className="user__wrap d-flex" onClick={() => setIsVisible(!isVisible)}>
-                    <figure className="user__avatar">
-                        <img src="https://via.placeholder.com/42" alt="avatar user" />
-                    </figure>
-                    <div className="user__info">
-                        <span className="name">Nguyễn Tấn An</span>
-                        <span className="position">Admin</span>
-                    </div>
-                </div>
-                <div ref={ref} className={`user__actions ${isVisible ? 'active' : ''} `}>
-                    <ul>
-                        <li>
-                            <i className="icon fas fa-user"></i>
-                                Tài khoản
+                <div className="Header_right-link">
+                    <ul className="Header_right-list">
+                        <li className="Header_right-list-home">
+                            <a href="#"><i class="fas fa-home"></i> <span>Trang chủ</span></a>
                         </li>
-                        <li>
-                            <i className="icon fas fa-cog"></i>
-                                 Cài đặt
-                        </li>
-                        <li className="log-out">
-                            <i className="icon fas fa-sign-out-alt"></i>
-                                Đăng xuất
+                        <li className="Header_right-list-user">
+                            <div
+                                className="Header_right-list-drop"
+                                onClick={() => setDropdown(!dropdown)}
+                            >
+                                <span>xuanthinh2405@gmail.com</span>
+                                <img src="https://ekyc.vnpt.vn/admin-dashboard/assets/img/user.jpg"></img>
+                            </div>
+                            <div className={`Dropdown-menu${dropdown ? '-show' : ''}`}>
+                                <ul className="Dropdown-menu-list">
+                                    <li className="Dropdown-menu-item">
+                                        <span>xuanthinh2405</span>
+                                    </li>
+                                    <li className="Dropdown-menu-item">
+                                        <i class="fas fa-user-circle"></i>
+                                        <span>Thông tin tài khoản</span>
+                                    </li>
+                                    <li className="Dropdown-menu-item">
+                                        <i class="fas fa-lock"></i>
+                                        <span>Đổi mật khẩu</span>
+                                    </li>
+                                    <li className="Dropdown-menu-item">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        <span>Thoát</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
-
-        </header >
-    )
+        </div>
+    );
 }
 
 export default Header;

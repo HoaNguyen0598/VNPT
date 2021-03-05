@@ -1,0 +1,41 @@
+.rc_token{
+    background-color: white;
+    padding: 30px;
+    //box-shadow: 0 4px 12px rgb(64 75 68 / 5%);
+    border-radius: 8px;
+    &-title{
+        padding-bottom: 32px;
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    &-h3{
+        padding-bottom  : 15px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &-text{
+        color: #757575;
+        background-color: #f6f6f6;
+        border-radius: 8px;
+        padding: 6px 10px;
+        border: none;
+        overflow: hidden;
+    }
+    &-content{
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        & img{
+            margin-left: 10px;
+        }
+    }
+    &-note{
+        max-width: 780px;
+        padding-top: 50px;
+        &--link{
+            color: #17c48a;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

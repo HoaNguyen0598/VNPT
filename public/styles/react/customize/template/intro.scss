@@ -1,46 +1,46 @@
-.t-intro{
-    &_header{
-    }
-    &_content{
-        text-align: center;
-        margin-top: 50px;
-        margin-left: 30%;
-        margin-right: 30%;
-        .block{
-            width: 393px;
-            margin: auto;
-            &_title{
-                padding: 25px 131px;
-                background-color: rgba($color: #ffffff, $alpha: 0.21);
-                font-size: 24px;
-            }
-            &_content{
-                margin-top: 10px;
-                display: flex;
-                text-align: left;
-                background-color: #ffffff;
-                color: #000000;
-                &-item{
-                    width: 50%;
-                    border: 1px solid #000000;
-                    text-align: center;
-                    .image{
-                        width: 100px;
-                        height: 100px;
-                        margin: auto;
-                        img{
-                            width: 100%;
-                        }
-                    }
-                    .name{
-                        color: #000000;
-                        font-weight: bold;
-                        &:hover{
-                            color: rgb(24, 37, 170);
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+// .t-intro{
+//     &_header{
+//     }
+//     &_content{
+//         text-align: center;
+//         margin-top: 50px;
+//         margin-left: 30%;
+//         margin-right: 30%;
+//         .block{
+//             width: 393px;
+//             margin: auto;
+//             &_title{
+//                 padding: 25px 131px;
+//                 background-color: rgba($color: #ffffff, $alpha: 0.21);
+//                 font-size: 24px;
+//             }
+//             &_content{
+//                 margin-top: 10px;
+//                 display: flex;
+//                 text-align: left;
+//                 background-color: #ffffff;
+//                 color: #000000;
+//                 &-item{
+//                     width: 50%;
+//                     border: 1px solid #000000;
+//                     text-align: center;
+//                     .image{
+//                         width: 100px;
+//                         height: 100px;
+//                         margin: auto;
+//                         img{
+//                             width: 100%;
+//                         }
+//                     }
+//                     .name{
+//                         color: #000000;
+//                         font-weight: bold;
+//                         &:hover{
+//                             color: rgb(24, 37, 170);
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

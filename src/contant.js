@@ -338,56 +338,37 @@ const RULES = {
 const SIDEBAR_MENU_DATA = [
     {
         id: 1,
-        label: 'dashboard',
+        label: 'bảng điều khiển',
         iconName: 'la-folder',
         url: '/',
     },
     {
         id: 2,
-        label: 'list_project',
+        label: 'Quản lý Token',
         iconName: 'la-clipboard-list',
-        url: '/projects',
+        url: '/token',
     },
     {
         id: 3,
-        label: 'list_profile',
+        label: 'Gói cước',
         iconName: 'la-user-alt',
-        url: PAGES_URL.profiles_project,
+        url: '/category',
     },
     {
         id: 4,
-        label: 'bank_policy',
+        label: 'Lịch sử thanh toán',
         iconName: 'la-landmark',
-        url: '/bank-policy',
+        url: '/payment-history',
     },
     {
         id: 5,
-        label: 'brief_approvals',
-        iconName: 'la-clipboard-check',
-        children: [
-            {
-                id: 53,
-                label: 'profiles_additional',
-                iconName: 'la-check-square',
-                url: '/profiles-additional/project',
-            },
-            {
-                id: 52,
-                label: 'examination_profile',
-                iconName: 'la-file-archive',
-                url: PAGES_URL.examination,
-            },
-            {
-                id: 51,
-                label: 'approval_history',
-                iconName: 'la-history',
-                url: '/approval-history',
-            },
-        ]
+        label: 'Tải SDK',
+        iconName: 'la-landmark',
+        url: '/dowload-sdk',
     },
     {
         id: 6,
-        label: 'general_news',
+        label: 'Trải nghiệp ekyc web',
         iconName: 'la-newspaper',
         url: '/news',
     },

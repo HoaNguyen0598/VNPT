@@ -3,7 +3,6 @@ import { PAGES_URL } from "./contant";
 
 const Elements = lazy(() => import("./templates/Elements"));
 const Example = lazy(() => import("./templates/Example"));
-
 const Login = lazy(() => import("./templates/Login/Login"));
 const ChangePassword = lazy(() => import("./templates/Login/ChangePassword"));
 const ConfirmForgotPassword = lazy(() => import("./templates/Login/ConfirmForgotPassword"));
@@ -14,11 +13,17 @@ const CreateUser = lazy(() => import("./templates/CreateUser/CreateUserPage"));
 const SignIn = lazy(() => import("./templates/SignIn/SignInPage"));
 
 
+const Token = lazy(() => import("./templates/Token/Token"));
+const CategoryData = lazy(() => import("./templates/CategoryData/CategoryData"));
+const Payment = lazy(() => import("./templates/Payment/Payment"));
+const Sdk = lazy(() => import("./templates/SDK/SdkDowload"));
+const News = lazy(() => import("./templates/News/News"));
+
 const MAIN = [
     {
         path: "/",
         component: Home,
-        title: "Home",
+        title: "bảng điều khiển",
     },
     {
         path: "/element",
@@ -44,6 +49,27 @@ const MAIN = [
         path: PAGES_URL.signin,
         component: SignIn,
         title: "SignIn",
+    },
+    {
+        path: "/token",
+        component: Token,
+        title: "Quản lý Token",
+    }, {
+        path: "/category",
+        component: CategoryData,
+        title: "Gói cước",
+    }, {
+        path: "/payment-history",
+        component: Payment,
+        title: "Lịch sử thanh toán",
+    }, {
+        path: "/dowload-sdk",
+        component: Sdk,
+        title: "tải SDK",
+    }, {
+        path: "/news",
+        component: News,
+        title: "trải nghiệm ekyc web",
     },
 ];
 
