@@ -71,10 +71,34 @@ const TableElement = () => {
             tags: 0,
             eror: 0,
         },
+        {
+            key: '5',
+            name: 'Face compare ',
+            age: '/ai/v1/face/compare',
+            address: 0,
+            tags: 0,
+            eror: 0,
+        },
+        {
+            key: '6',
+            name: 'Face compare ',
+            age: '/ai/v1/face/compare',
+            address: 0,
+            tags: 0,
+            eror: 0,
+        },
+        {
+            key: '7',
+            name: 'Face compare ',
+            age: '/ai/v1/face/compare',
+            address: 0,
+            tags: 0,
+            eror: 0,
+        },
+
     ];
     return (
         <>
-            <h3>Table</h3>
             <div className="row">
                 <div className="col-12">
                     <Table

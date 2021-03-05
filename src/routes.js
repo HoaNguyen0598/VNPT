@@ -17,7 +17,7 @@ const Token = lazy(() => import("./templates/Token/Token"));
 const CategoryData = lazy(() => import("./templates/CategoryData/CategoryData"));
 const Payment = lazy(() => import("./templates/Payment/Payment"));
 const Sdk = lazy(() => import("./templates/SDK/SdkDowload"));
-const News = lazy(() => import("./templates/News/News"));
+const Experience = lazy(() => import("./templates/Experience/Experience"));
 
 const MAIN = [
     {
@@ -63,12 +63,12 @@ const MAIN = [
         component: Payment,
         title: "Lịch sử thanh toán",
     }, {
-        path: "/dowload-sdk",
+        path: "/download-sdk",
         component: Sdk,
         title: "tải SDK",
     }, {
-        path: "/news",
-        component: News,
+        path: "/experience",
+        component: Experience,
         title: "trải nghiệm ekyc web",
     },
 ];
