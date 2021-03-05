@@ -21,6 +21,19 @@
         }
         &-body{
             padding-top: 20px;
+            padding-bottom: 15px;
+            & .text{
+                text-align: center;
+                padding-top: 30px;
+                font-size: 1.2rem;
+            }
+        }
+        &-pagination{
+            padding-bottom: 50px;
+            .ant-pagination{
+            //float:right;
+            margin-bottom: 30px;
+            }
         }
     }
 

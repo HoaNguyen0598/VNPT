@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from 'components/common/VNPT/CardStatistic/CardStatistic';
 import Table from 'templates/Elements/Table/Table';
+import { Pagination } from 'antd';
 
 const data = [
     {
@@ -49,11 +50,26 @@ const Home = () => {
             </div>
             <div className="rc_home-table">
                 <div className="rc_home-table-title">
+                    <h4 className="left">Biểu đồ số lượng</h4>
+                    <h3 className="right">Ngày cập nhật: 16:23, 05/03/2021</h3>
+                </div>
+                <div className="rc_home-table-body">
+                    <Table />
+                    <h4 className="rc_home-table-body text">Hour</h4>
+                </div>
+            </div>
+            <div className="rc_home-table">
+                <div className="rc_home-table-title">
                     <h4 className="left">Bảng thống kê tần xuất API</h4>
                     <h3 className="right">Ngày cập nhật: 15:29, 05/03/2021</h3>
                 </div>
                 <div className="rc_home-table-body">
                     <Table />
+                </div>
+                <div className="rc_home-table-pagination">
+                    <Pagination
+                        defaultCurrent={1} total={30}
+                    />
                 </div>
             </div>
         </div>
