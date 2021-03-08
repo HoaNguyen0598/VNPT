@@ -55,11 +55,12 @@ ul.list-style-none {
 .page-wrapper{
     margin-left: 260px;
     margin-right: 17px;
-    background-color: #f3f3f3;
+    background-color: #f8f9fa;
     position: relative;
     box-shadow: 0 3px 9px 0 rgba(162, 176, 190, 0.15);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    min-height: 1024px;
 }
 .main_content {
     @include scrollbar;
@@ -89,3 +90,49 @@ ul.list-style-none {
     @include flex(1);
     overflow: hidden;
 }
+
+.left-sidebar {
+    position: absolute;
+    width: 260px;
+    height: 100%;
+    top: 80px;
+    z-index: 10;
+    background: 0 0;
+    transition: .2s ease-in;
+    z-index: 9999;
+    @media (max-width: 768px) {
+            left: -260px;
+    }
+    & .scroll-sidebar {
+        background: #fff;
+        height: calc(100% - 230px);
+        overflow-y: auto;
+        padding-bottom: 50px;
+        & .sidebar-nav{
+            & #sidebarnav{
+                list-style: none;
+                margin-left: -10px;
+                & .sidebar-item{
+                    padding: 10px 0px;
+                    & .sidebar-link{
+                        color: #343a40;
+                        display: flex;
+                        align-items: center;
+                        &.active{
+                            color: #17c48a;
+                            display: flex;
+                            & i span{
+                                color: #17c48a;
+                            }
+                        }
+                        & i{
+                            font-size: 30px;
+                            padding-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

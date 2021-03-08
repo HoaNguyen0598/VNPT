@@ -339,38 +339,38 @@ const SIDEBAR_MENU_DATA = [
     {
         id: 1,
         label: 'bảng điều khiển',
-        iconName: 'la-folder',
+        iconName: 'fa-border-all',
         url: '/',
     },
     {
         id: 2,
         label: 'Quản lý Token',
-        iconName: 'la-clipboard-list',
+        iconName: 'fa-key',
         url: '/token',
     },
     {
         id: 3,
         label: 'Gói cước',
-        iconName: 'la-user-alt',
+        iconName: 'fa-money-check-alt',
         url: '/category',
     },
     {
         id: 4,
         label: 'Lịch sử thanh toán',
-        iconName: 'la-landmark',
+        iconName: 'fa-file-invoice-dollar',
         url: '/payment-history',
     },
     {
         id: 5,
         label: 'Tải SDK',
-        iconName: 'la-landmark',
-        url: '/dowload-sdk',
+        iconName: 'fa-download',
+        url: '/download-sdk',
     },
     {
         id: 6,
         label: 'Trải nghiệp ekyc web',
-        iconName: 'la-newspaper',
-        url: '/news',
+        iconName: 'fa-grin',
+        url: '/experience',
     },
 ]
 

@@ -24,6 +24,8 @@ const MAIN = [
         path: "/",
         component: Home,
         title: "bảng điều khiển",
+        isBreadcrumb: true,
+        isSidebar: true,
     },
     {
         path: "/element",
@@ -54,22 +56,32 @@ const MAIN = [
         path: "/token",
         component: Token,
         title: "Quản lý Token",
+        isBreadcrumb: true,
+        isSidebar: true,
     }, {
         path: "/category",
         component: CategoryData,
         title: "Gói cước",
+        isBreadcrumb: true,
+        isSidebar: true,
     }, {
         path: "/payment-history",
         component: Payment,
         title: "Lịch sử thanh toán",
+        isBreadcrumb: true,
+        isSidebar: true,
     }, {
         path: "/download-sdk",
         component: Sdk,
         title: "tải SDK",
+        isBreadcrumb: true,
+        isSidebar: true,
     }, {
         path: "/experience",
         component: Experience,
         title: "trải nghiệm ekyc web",
+        isBreadcrumb: true,
+        isSidebar: true,
     },
 ];
 

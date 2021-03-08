@@ -59,7 +59,7 @@ const SideBar = (props) => {
             className="left-sidebar "
             onMouseEnter={handleHover}
             onMouseLeave={handleHover}>
-            <Profile />
+            {/* <Profile /> */}
             {/* Sidebar scroll*/}
             <div className="scroll-sidebar ">
                 {/* Sidebar navigation*/}
@@ -73,7 +73,7 @@ const SideBar = (props) => {
                                             <a
                                                 className={`sidebar-link ${mi.children ? 'has-arrow' : ''}`} onClick={(e) => onMenuClick(e, mi.id)}
                                             >
-                                                <i className={`las ${mi.iconName}`} />
+                                                <i className={`fas ${mi.iconName}`} />
                                                 <span className="hide-menu"> {translate(mi.label)} </span>
                                             </a>
                                             <ul className="collapse first-level base-level-line">

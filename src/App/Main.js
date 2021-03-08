@@ -18,28 +18,29 @@ const Main = () => {
             <div className='main_wapper'>
                 <div className={`main_container`}>
                     <Header />
+                    <SideBar />
                     <div className="page-wrapper ">
-                    <div className="container-fluid main_content">
-                        {/* <SideBar /> */}
-                        {/* <div className='monitoring detect_content'>
+                        <div className="container-fluid main_content">
+                            {/* <SideBar /> */}
+                            {/* <div className='monitoring detect_content'>
                             <div className='detect_content__left monitoring__camera w-100'> */}
-                                <Suspense fallback={<StaticLoading />}>
-                                    <Switch >
-                                        {MAIN.map((data, idx) => (
-                                            <Route exact key={idx} path={data.path}>
-                                                <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
-                                                    {/* <Breadcrumb dataBreadcrumb={{ title: data.title, path: data.path, isChangeTitle: data.isChangeTitle }} /> */}
-                                                    <data.component />
-                                                </Animated>
-                                            </Route>
-                                        ))}
-                                        <Route component={Error404} />
-                                    </Switch>
-                                </Suspense>
+                            <Suspense fallback={<StaticLoading />}>
+                                <Switch >
+                                    {MAIN.map((data, idx) => (
+                                        <Route exact key={idx} path={data.path}>
+                                            <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
+                                                {/* <Breadcrumb dataBreadcrumb={{ title: data.title, path: data.path, isChangeTitle: data.isChangeTitle }} /> */}
+                                                <data.component />
+                                            </Animated>
+                                        </Route>
+                                    ))}
+                                    <Route component={Error404} />
+                                </Switch>
+                            </Suspense>
                             {/* </div>
                         </div> */}
-                    </div>
-                    <Footer />
+                        </div>
+                        <Footer />
                     </div>
                 </div>
             </div>

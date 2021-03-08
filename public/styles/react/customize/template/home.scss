@@ -8,6 +8,7 @@
         padding: 30px;
         background-color: white;
         border-radius: 5px;
+        margin-bottom: 70px;
         &-title{
             display: flex;
             justify-content: space-between;
@@ -29,7 +30,7 @@
             }
         }
         &-pagination{
-            padding-bottom: 50px;
+            //padding-bottom: 50px;
             .ant-pagination{
             //float:right;
             margin-bottom: 30px;
