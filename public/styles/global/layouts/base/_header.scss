@@ -515,11 +515,10 @@
     background-color: #fff!important;
     border-bottom:1px solid #dee2e6!important;
     box-shadow: inset -1px 0 0 #e2e2ea;
-    z-index: 11;
+    z-index: 2;
     display: flex;
     &_logo{
-        height: 100%;
-        width: 17%;
+        height: 55px;
         &-img{
             width: 150px;
             height: 100%;
@@ -530,7 +529,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 83%;
+        width: 100%;
+        margin-left: 250px;
         &-bar {
             & a{
                 padding-left: 15px;

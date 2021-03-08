@@ -83,13 +83,10 @@ ul.list-style-none {
 
 .left-sidebar {
     position: absolute;
-    width: 260px;
+    width: 250px;
     height: 100%;
-    top: 80px;
-    z-index: 10;
-    background: 0 0;
-    transition: .2s ease-in;
-    z-index: 9999;
+    //border-right: 1px solid #dee2e6;
+    z-index: 10 !important;
     transition: margin-left .3s ease-in-out,width .3s ease-in-out;
     @media (max-width: 768px) {
             left: -260px;

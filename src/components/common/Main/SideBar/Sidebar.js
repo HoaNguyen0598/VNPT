@@ -61,6 +61,11 @@ const SideBar = (props) => {
             onMouseLeave={handleHover}>
             {/* <Profile /> */}
             {/* Sidebar scroll*/}
+            <div className="Header_logo">
+                <a href="">
+                    <img className="Header_logo-img" src="https://ekyc.vnpt.vn/admin-dashboard/assets/img/logo_ekyc.svg" />
+                </a>
+            </div>
             <div className="scroll-sidebar ">
                 {/* Sidebar navigation*/}
                 <nav className="sidebar-nav">

@@ -9,11 +9,6 @@ const Header = ({ handleMenu }) => {
     }
     return (
         <div className="Header">
-            <div className="Header_logo">
-                <a href="">
-                    <img className="Header_logo-img" src="https://ekyc.vnpt.vn/admin-dashboard/assets/img/logo_ekyc.svg" />
-                </a>
-            </div>
             <div className="Header_right">
                 <div className="Header_right-bar"
                     onClick={handleClickItem}
