@@ -18,10 +18,11 @@ const Main = () => {
             <div className='main_wapper'>
                 <div className={`main_container`}>
                     <Header />
+                    <div className="page-wrapper ">
                     <div className="container-fluid main_content">
                         {/* <SideBar /> */}
-                        <div className='monitoring detect_content'>
-                            <div className='detect_content__left monitoring__camera w-100'>
+                        {/* <div className='monitoring detect_content'>
+                            <div className='detect_content__left monitoring__camera w-100'> */}
                                 <Suspense fallback={<StaticLoading />}>
                                     <Switch >
                                         {MAIN.map((data, idx) => (
@@ -35,10 +36,11 @@ const Main = () => {
                                         <Route component={Error404} />
                                     </Switch>
                                 </Suspense>
-                            </div>
-                        </div>
+                            {/* </div>
+                        </div> */}
                     </div>
                     <Footer />
+                    </div>
                 </div>
             </div>
         </I18nextProvider >
