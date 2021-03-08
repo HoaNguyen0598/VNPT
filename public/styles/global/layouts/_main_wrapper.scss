@@ -26,29 +26,19 @@ ul.list-style-none {
 }
 
 .main_wapper {
-    @include flexbox;
-    &.mini-sidebar {
-        &.active{
-            .sidebar {
-                @include transform(translateX(0));
-            }
-            .sidebar_toggler{
-                @include transform(translateX(245px));
-            }
-        }
-        .sidebar{
-            position: absolute;
-            @include transform(translateX(-245px));
-            .nav {
-                .nav-link {
-                    .icon {
-                        margin: 0;
-                    }
+    &.sidebar-mini{
+        & .main_container{
+            & .left-sidebar{
+                transition: margin-left .3s ease-in-out,width .3s ease-in-out;
+                margin-left: 0;
+                width: 4.6rem;
+                & .scroll-sidebar .sidebar-nav #sidebarnav .sidebar-item .sidebar-link span{
+                    display: none;
                 }
             }
-        }
-        .sidebar_toggler{
-            @include transition(all 0.4s ease);
+            & .page-wrapper{
+                margin-left: 4.6rem!important;
+            }
         }
     }
 }
@@ -100,6 +90,7 @@ ul.list-style-none {
     background: 0 0;
     transition: .2s ease-in;
     z-index: 9999;
+    transition: margin-left .3s ease-in-out,width .3s ease-in-out;
     @media (max-width: 768px) {
             left: -260px;
     }
@@ -111,9 +102,9 @@ ul.list-style-none {
         & .sidebar-nav{
             & #sidebarnav{
                 list-style: none;
-                margin-left: -10px;
+               padding-left: 10px;
                 & .sidebar-item{
-                    padding: 10px 0px;
+                    padding: 10px 10px;
                     & .sidebar-link{
                         color: #343a40;
                         display: flex;
@@ -121,6 +112,7 @@ ul.list-style-none {
                         &.active{
                             color: #17c48a;
                             display: flex;
+                            border-left: 2px solid #17c48a;;
                             & i span{
                                 color: #17c48a;
                             }

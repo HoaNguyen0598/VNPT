@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from 'components/common/VNPT/CardStatistic/CardStatistic';
 import Table from 'templates/Elements/Table/Table';
 import { Pagination } from 'antd';
+
+
+import moment from 'moment';
 
 const data = [
     {
@@ -39,6 +42,20 @@ const cardStatistic = data.map((item, index) =>
 )
 )
 const Home = () => {
+    const [currentDate, setCurrentDate] = useState('');
+
+    useEffect(() => {
+        var date = new Date().getDate(); //Current Date
+        var month = new Date().getMonth() + 1; //Current Month
+        var year = new Date().getFullYear(); //Current Year
+        var hours = new Date().getHours(); //Current Hours
+        var min = new Date().getMinutes(); //Current Minutes
+        var sec = new Date().getSeconds(); //Current Seconds
+        setCurrentDate(
+            hours + ':' + min + ', ' + date + '/'
+            + month + '/' + year
+        );
+    }, []);
     return (
         <div className="rc_home">
             <div className="rc_home-statistic">
@@ -51,7 +68,7 @@ const Home = () => {
             <div className="rc_home-table">
                 <div className="rc_home-table-title">
                     <h4 className="left">Biểu đồ số lượng</h4>
-                    <h3 className="right">Ngày cập nhật: 16:23, 05/03/2021</h3>
+                    <h3 className="right">Ngày cập nhật: {currentDate}</h3>
                 </div>
                 <div className="rc_home-table-body">
                     <Table />
@@ -61,7 +78,7 @@ const Home = () => {
             <div className="rc_home-table">
                 <div className="rc_home-table-title">
                     <h4 className="left">Bảng thống kê tần xuất API</h4>
-                    <h3 className="right">Ngày cập nhật: 15:29, 05/03/2021</h3>
+                    <h3 className="right">Ngày cập nhật: {currentDate}</h3>
                 </div>
                 <div className="rc_home-table-body">
                     <Table />

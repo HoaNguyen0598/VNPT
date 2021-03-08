@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 
-function Header() {
+const Header = ({ handleMenu }) => {
+
     const [dropdown, setDropdown] = useState(false);
+
+    const handleClickItem = () => {
+        handleMenu && handleMenu()
+    }
     return (
         <div className="Header">
             <div className="Header_logo">
@@ -10,9 +15,13 @@ function Header() {
                 </a>
             </div>
             <div className="Header_right">
-                <div className="Header_right-bar">
-                    <a href="">
-                        <i className="fas fa-bars"></i>
+                <div className="Header_right-bar"
+                    onClick={handleClickItem}
+                >
+                    <a href="#">
+                        <i
+                            className="fas fa-bars"
+                        ></i>
                     </a>
                 </div>
                 <div className="Header_right-link">

@@ -13,11 +13,16 @@ import SideBar from 'components/common/Main/SideBar/Sidebar';
 
 
 const Main = () => {
+    const [sidebar, setSidebar] = useState(false);
+
+    const clickMenu = () => {
+        setSidebar(!sidebar);
+    }
     return (
         <I18nextProvider i18n={i18n}>
-            <div className='main_wapper'>
+            <div className={`main_wapper ${sidebar ? 'sidebar-mini' : ''}`}>
                 <div className={`main_container`}>
-                    <Header />
+                    <Header handleMenu={clickMenu} />
                     <SideBar />
                     <div className="page-wrapper ">
                         <div className="container-fluid main_content">
