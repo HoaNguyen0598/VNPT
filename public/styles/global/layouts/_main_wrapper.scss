@@ -28,12 +28,33 @@ ul.list-style-none {
 .main_wapper {
     &.sidebar-mini{
         & .main_container{
+            & .Header{
+                margin-left: 70px;
+                transition: margin-left .3s ease-in-out;
+                z-index: 999;
+                //max-width: calc(100% - 70px);
+                min-width: calc(100% - 70px);
+            }
             & .left-sidebar{
                 transition: margin-left .3s ease-in-out,width .3s ease-in-out;
                 margin-left: 0;
                 width: 4.6rem;
                 & .scroll-sidebar .sidebar-nav #sidebarnav .sidebar-item .sidebar-link span{
                     display: none;
+                }
+            }
+            & .left-sidebar:hover{
+                width: 260px;
+                z-index: 9999 !important;
+                background: #fff;
+                transition: margin-left .3s ease-in-out;
+                & .Header_logo{
+                    width: 260px;
+                    transition: margin-left .3s ease-in-out;
+                }
+                & .scroll-sidebar .sidebar-nav #sidebarnav .sidebar-item .sidebar-link span{
+                    display: block;
+                    transition: margin-left .3s ease-in-out;
                 }
             }
             & .page-wrapper{
@@ -47,10 +68,10 @@ ul.list-style-none {
     margin-right: 17px;
     background-color: #f8f9fa;
     position: relative;
-    box-shadow: 0 3px 9px 0 rgba(162, 176, 190, 0.15);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     min-height: 1024px;
+    transition: margin-left .3s ease-in-out;
 }
 .main_content {
     @include scrollbar;
@@ -82,24 +103,27 @@ ul.list-style-none {
 }
 
 .left-sidebar {
-    position: absolute;
-    width: 250px;
+    position: fixed;
+    width: 260px;
     height: 100%;
-    //border-right: 1px solid #dee2e6;
-    z-index: 10 !important;
-    transition: margin-left .3s ease-in-out,width .3s ease-in-out;
+    z-index: 20 !important;
+    transition: margin-left .3s ease-in-out;
     @media (max-width: 768px) {
             left: -260px;
+            transition: margin-left .3s ease-in-out,width .3s ease-in-out;
     }
     & .scroll-sidebar {
+        border-right: 1px solid #dee2e6 ;
         background: #fff;
-        height: calc(100% - 230px);
+        height: 100%;
         overflow-y: auto;
         padding-bottom: 50px;
+        transition: margin-left .3s ease-in-out;
         & .sidebar-nav{
+           transition: margin-left .3s ease-in-out;
             & #sidebarnav{
                 list-style: none;
-               padding-left: 10px;
+                padding-left: 10px;
                 & .sidebar-item{
                     padding: 10px 10px;
                     & .sidebar-link{
@@ -109,7 +133,7 @@ ul.list-style-none {
                         &.active{
                             color: #17c48a;
                             display: flex;
-                            border-left: 2px solid #17c48a;;
+                            border-left: 2px solid #17c48a;
                             & i span{
                                 color: #17c48a;
                             }
