@@ -5,7 +5,7 @@ const SdkDowload = () => {
     return (
         <div className="rc_sdk">
             <div className="row">
-                <div className="col-3">
+                <div className="col-lg-3 col-md-4 col-sm-6">
                     <CardSdk
                         title="eKYC SDK"
                         img="https://ekyc.vnpt.vn/admin-dashboard/assets/img/ios.png"
@@ -13,7 +13,7 @@ const SdkDowload = () => {
                         date="Release date: August 05, 2020"
                     />
                 </div>
-                <div className="col-3">
+                <div className="col-lg-3 col-md-4 col-sm-6">
                     <CardSdk
                         title="eKYC SDK"
                         img="https://ekyc.vnpt.vn/admin-dashboard/assets/img/android.png"

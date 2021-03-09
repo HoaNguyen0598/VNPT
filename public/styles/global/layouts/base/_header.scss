@@ -10,6 +10,11 @@
     display: flex;
     transition: margin-left .3s ease-in-out;
     max-width: calc(100% - 250px);
+    @media(max-width: 960px){
+        margin-left: 0px;
+        transition: margin-left .3s ease-in-out;
+        min-width: 100%;
+    }
     &_logo{
         height: 55px;
         border-bottom: 1px solid #dee2e6 !important;

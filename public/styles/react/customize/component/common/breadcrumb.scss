@@ -1,0 +1,9 @@
+.breadcrumb{
+    background-color: #f8f9fa !important;
+    font-size: 30px;
+    &-item.active{
+        & a{
+            color: #17c48a;
+        }
+    }
+}

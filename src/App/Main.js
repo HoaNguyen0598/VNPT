@@ -10,6 +10,7 @@ import { withTranslation } from 'react-i18next';
 import Header from '../components/common/Main/Header';
 import StaticLoading from 'components/common/Loading/StaticLoading';
 import SideBar from 'components/common/Main/SideBar/Sidebar';
+import Breadcrumb from 'components/common/Main/Breadcrumb';
 
 
 const Main = () => {
@@ -19,6 +20,7 @@ const Main = () => {
         setSidebar(!sidebar);
     }
     return (
+
         <I18nextProvider i18n={i18n}>
             <div className={`main_wapper ${sidebar ? 'sidebar-mini' : ''}`}>
                 <div className={`main_container`}>
@@ -26,15 +28,12 @@ const Main = () => {
                     <SideBar />
                     <div className="page-wrapper ">
                         <div className="container-fluid main_content">
-                            {/* <SideBar /> */}
-                            {/* <div className='monitoring detect_content'>
-                            <div className='detect_content__left monitoring__camera w-100'> */}
                             <Suspense fallback={<StaticLoading />}>
                                 <Switch >
                                     {MAIN.map((data, idx) => (
                                         <Route exact key={idx} path={data.path}>
                                             <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
-                                                {/* <Breadcrumb dataBreadcrumb={{ title: data.title, path: data.path, isChangeTitle: data.isChangeTitle }} /> */}
+                                                {data.isBreadcrumb && <Breadcrumb isDymamicBreadcrumb={data.isDymamicBreadcrumb} dataBreadcrumb={{ title: data.title, path: data.path }} />}
                                                 <data.component />
                                             </Animated>
                                         </Route>
@@ -42,8 +41,6 @@ const Main = () => {
                                     <Route component={Error404} />
                                 </Switch>
                             </Suspense>
-                            {/* </div>
-                        </div> */}
                         </div>
                         <Footer />
                     </div>

@@ -340,7 +340,7 @@ const SIDEBAR_MENU_DATA = [
         id: 1,
         label: 'bảng điều khiển',
         iconName: 'fa-border-all',
-        url: '/',
+        url: '/dashboard',
     },
     {
         id: 2,

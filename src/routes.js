@@ -21,7 +21,7 @@ const Experience = lazy(() => import("./templates/Experience/Experience"));
 
 const MAIN = [
     {
-        path: "/",
+        path: "/dashboard",
         component: Home,
         title: "bảng điều khiển",
         isBreadcrumb: true,

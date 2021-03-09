@@ -31,7 +31,7 @@ const data = [
 
 const cardStatistic = data.map((item, index) =>
 (
-    <div className="col-3">
+    <div className="col-lg-3 col-md-6 col-sm-12 pb-2">
         <Card
             key={index}
             img={item.img}
@@ -59,11 +59,11 @@ const Home = () => {
     return (
         <div className="rc_home">
             <div className="rc_home-statistic">
-                <div className="col-12">
-                    <div className="row">
-                        {cardStatistic}
-                    </div>
+
+                <div className="row">
+                    {cardStatistic}
                 </div>
+
             </div>
             <div className="rc_home-table">
                 <div className="rc_home-table-title">

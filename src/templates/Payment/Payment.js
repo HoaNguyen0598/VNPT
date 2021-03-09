@@ -1,7 +1,8 @@
-import React from 'react';
-import {DatePicker} from 'antd';
+import React, { useState } from 'react';
+//import {DatePicker} from 'antd';
 import Select from 'components/base/Select/Select';
 import moment from 'moment';
+import DatePicker from "react-datepicker";
 
 const data = [
     { value: 1, label: 'Tất cả' },
@@ -10,28 +11,31 @@ const data = [
     { value: 4, label: 'Hòa' },
 ]
 const dateFormat = 'MM/DD/YYYY';
-const monthFormat = 'YYYY/MM';
 const Payment = () => {
+    const [startDate, setStartDate] = useState(new Date());
+    const onChange = (values) => {
+        console.log('value: ', values)
+    }
     return (
         <div className="rc_payment">
             <div className="payment_form">
-                <div className="row">
-                    <div className="col-md-7">
+                <div className="row payment_form-header">
+                    <div className="col-md-7 col-sm-12">
                         <div className="row">
-                            <div className="col-3">Thời gian thanh toán</div>
-                            <div className="col-4">
-                                <DatePicker  defaultValue={moment('7/3/2021', dateFormat)} format={dateFormat}/>
+                            <div className="col-lg-2 col-md-12 col-sm-12">Thời gian thanh toán</div>
+                            <div className="col-lg-4 col-md-6 col-sm-6">
+                                <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
                             </div>
-                            <div className="col-4">
-                            <DatePicker  defaultValue={moment('7/3/2021', dateFormat)} format={dateFormat}/>
+                            <div className="col-lg-4 col-md-6 col-sm-6">
+                                <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-1">
+                    <div className="col-md-1 col-sm-12">
                         <label>Trạng thái</label>
-                    </div> 
-                    <div className="col-md-3">
-                        <Select 
+                    </div>
+                    <div className="col-lg-3 col-md-4 col-sm-12">
+                        <Select
                             data={data}
                             defaultValue={data[0].value}
                         />
@@ -40,7 +44,7 @@ const Payment = () => {
                 <div>
                     <button className="btn-form">Tìm kiếm</button>
                 </div>
-                <div>
+                <div className="">
                     <table>
                         <tr>
                             <th>No.</th>

@@ -72,6 +72,16 @@ ul.list-style-none {
     border-top-right-radius: 5px;
     min-height: 1024px;
     transition: margin-left .3s ease-in-out;
+    & .react-datepicker-wrapper .react-datepicker__input-container input{
+        height: 40px;
+        padding:  0 10px;
+        border: 1px solid #d9d9d9;
+        width: 100%;
+    }
+    @media(max-width: 960px){
+        margin-left: 0px;
+        transition: margin-left .3s ease-in-out;
+    }
 }
 .main_content {
     @include scrollbar;
@@ -108,7 +118,7 @@ ul.list-style-none {
     height: 100%;
     z-index: 20 !important;
     transition: margin-left .3s ease-in-out;
-    @media (max-width: 768px) {
+    @media (max-width: 960px) {
             left: -260px;
             transition: margin-left .3s ease-in-out,width .3s ease-in-out;
     }

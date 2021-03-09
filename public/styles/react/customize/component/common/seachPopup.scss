@@ -12,11 +12,16 @@
 .rc_pulldow_smart{
     .rc-pulldown_dropdowncontainer{
         .ant-select-dropdown .ant-select-item-option-active:not(.ant-select-item-option-disabled){
-            background-color: #7bce92;
+            background-color: #005197;
+            color: white;
+           
         }
         .ant-select-item-option-selected:not(.ant-select-item-option-disabled){
-            background-color: #7bce92;
+            background-color: #005197;
             font-weight: normal;
         }
     }
+    .ant-select-lg{
+            width: 100%;
+        }
 }

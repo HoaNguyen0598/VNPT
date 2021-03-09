@@ -1,7 +1,11 @@
 .rc_payment{
     background-color: white;
     padding: 30px;
-
+    & .payment_form{
+      &-header{
+        align-items: center;
+      }
+    }
     table, th, td {
         border: 1px solid #dee2e6;
         padding: .75rem;
