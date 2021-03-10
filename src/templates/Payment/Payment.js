@@ -44,7 +44,7 @@ const Payment = () => {
                 <div>
                     <button className="btn-form">Tìm kiếm</button>
                 </div>
-                <div className="">
+                <div className="payment-table">
                     <table>
                         <tr>
                             <th>No.</th>
