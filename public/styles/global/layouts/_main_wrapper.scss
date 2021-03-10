@@ -39,8 +39,14 @@ ul.list-style-none {
                 transition: margin-left .3s ease-in-out,width .3s ease-in-out;
                 margin-left: 0;
                 width: 4.6rem;
+                @media(max-width: 960px){
+                    width: 260px;
+                }
                 & .scroll-sidebar .sidebar-nav #sidebarnav .sidebar-item .sidebar-link span{
                     display: none;
+                    @media(max-width: 960px){
+                     display: block;
+                    }
                 }
             }
             & .left-sidebar:hover{
@@ -119,7 +125,7 @@ ul.list-style-none {
     z-index: 20 !important;
     transition: margin-left .3s ease-in-out;
     @media (max-width: 960px) {
-            left: -260px;
+            margin-left: -260px;
             transition: margin-left .3s ease-in-out,width .3s ease-in-out;
     }
     & .scroll-sidebar {

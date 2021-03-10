@@ -54,3 +54,22 @@
         }
     }
 }
+
+// Pagination Antd
+.ant-pagination-item{
+    font-size: 16px!important;
+    color: #005197;
+}
+.ant-pagination-item-active{
+    background: #005197!important;
+    border-color: #005197!important;
+    color: white !important;
+}
+.ant-pagination-prev .ant-pagination-item-link{
+    line-height: 1rem;
+    padding-bottom: 5px;
+}
+.ant-pagination-next .ant-pagination-item-link{
+    line-height: 1rem;
+    padding-bottom: 5px;
+}

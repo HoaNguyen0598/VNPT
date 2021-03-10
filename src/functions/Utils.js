@@ -606,7 +606,7 @@ export const getBreadcrumbData = (pathRoute, routes, pathUrl) => {
         resPaths = resPaths.splice(resPaths.length - 2, resPaths.length);
     }
 
-    resPaths.unshift({ path: '/', title: 'Home' });
+    resPaths.unshift({ path: '/dashboard', title: 'Home' });
     // console.log('resPaths', resPaths);
     return resPaths;
 }

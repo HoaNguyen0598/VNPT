@@ -24,7 +24,7 @@ const MAIN = [
         path: "/dashboard",
         component: Home,
         title: "bảng điều khiển",
-        isBreadcrumb: true,
+        isBreadcrumb: false,
         isSidebar: true,
     },
     {
@@ -80,7 +80,7 @@ const MAIN = [
         path: "/experience",
         component: Experience,
         title: "trải nghiệm ekyc web",
-        isBreadcrumb: true,
+        isBreadcrumb: false,
         isSidebar: true,
     },
 ];

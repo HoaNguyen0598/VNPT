@@ -48,7 +48,7 @@ const Experience = () => {
             <div className="">
                 {cardData}
             </div>
-            <div className="col-4 rc_experience-card">
+            <div className="col-5 rc_experience-card">
                 <Confirm />
             </div>
             <div className="col-5 rc_experience-card">

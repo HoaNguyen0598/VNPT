@@ -95,6 +95,22 @@ const TableElement = () => {
             tags: 0,
             eror: 0,
         },
+        {
+            key: '8',
+            name: 'Face compare ',
+            age: '/ai/v1/face/compare',
+            address: 0,
+            tags: 0,
+            eror: 0,
+        },
+        {
+            key: '9',
+            name: 'Face compare ',
+            age: '/ai/v1/face/compare',
+            address: 0,
+            tags: 0,
+            eror: 0,
+        },
 
     ];
     return (

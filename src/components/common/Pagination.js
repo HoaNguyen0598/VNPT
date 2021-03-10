@@ -72,15 +72,6 @@ const Pagination = (props) => {
                 {`${translate('pagination_in_total')} ${data && data.total_record} ${translate('pagination_records')}`}
             </label>
             <label class="vertical-dash">|</label>
-            <label className="text-page d-inline-flex">{translate('pagination_search_page')}:</label>
-            <Input
-                type="number"
-                className="form-control square page-number text-center"
-                placeholder={translate('page_id')}
-                value={inputNumber}
-                onKeyPress={handleKeypress}
-                onChange={handleInputChange}
-            />
         </div>
         //             :
         // <div className={'pagination m_pager'}>

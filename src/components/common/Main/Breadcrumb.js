@@ -9,7 +9,6 @@ const Breadcrumb = ({ isDymamicBreadcrumb, dataBreadcrumb }) => {
     const { t: translate } = useTranslation(['breadcrumb']);
     const location = useLocation();
     const { match, loadable } = useSelector((state) => state.breadcrumbReducer);
-    console.log('---: ', match, loadable)
     const pathURL = location.pathname;
     const { path } = dataBreadcrumb;
 
@@ -25,12 +24,6 @@ const Breadcrumb = ({ isDymamicBreadcrumb, dataBreadcrumb }) => {
                     const breadcrumbLabel = isDymamicBreadcrumb && item.isDynamic && matchClone.length ? matchClone.pop() : translate(item.title);
                     if (index === (newPaths.length - 1)) {
                         return <li className="breadcrumb-item" aria-current="page" key={index}>{breadcrumbLabel}</li>
-                    } else {
-                        return (
-                            <li className="breadcrumb-item active" aria-current="page" key={index}>
-                                <Link to={item.path}>{translate(breadcrumbLabel)}</Link>
-                            </li>
-                        )
                     }
                 })}
             </ol>
